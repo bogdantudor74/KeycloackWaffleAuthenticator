@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
     
     <properties>
-    	<keycloack.version>4.0.0.CR1-SNAPSHOT</keycloack.version>
+    	<keycloack.version>4.0.0.Beta1</keycloack.version>
     	<jboss.logging.version>3.3.1.Final</jboss.logging.version>
     </properties>
   
