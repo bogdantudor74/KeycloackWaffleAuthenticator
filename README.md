@@ -1,6 +1,6 @@
 # KeycloackWaffleAuthenticator
 
-https://travis-ci.org/bogdantudor74/KeycloackWaffleAuthenticator.svg?branch=master
+[![Build Status](https://travis-ci.org/bogdantudor74/KeycloackWaffleAuthenticator.svg?branch=master)](https://travis-ci.org/bogdantudor74/KeycloackWaffleAuthenticator)
 
 Keycloack authenticator module using waffle.
 Uses SPI as per Keycloak documentation. The waffle usage is little altered, because of http request usage.
