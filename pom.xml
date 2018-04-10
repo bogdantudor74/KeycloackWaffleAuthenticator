@@ -3,4 +3,65 @@
   <groupId>KeycloackWaffleAuthenticator</groupId>
   <artifactId>KeycloackWaffleAuthenticator</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+    
+    <properties>
+    	<keycloack.version>4.0.0.CR1-SNAPSHOT</keycloack.version>
+    	<jboss.logging.version>3.3.1.Final</jboss.logging.version>
+    </properties>
+  
+  
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.github.waffle/waffle-jna -->
+		<dependency>
+			<groupId>com.github.waffle</groupId>
+			<artifactId>waffle-jna</artifactId>
+			<version>1.8.3</version>
+		</dependency>
+		<dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-core</artifactId>
+            <version>${keycloack.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-server-spi</artifactId>
+            <scope>provided</scope>
+            <version>${keycloack.version}</version>            
+        </dependency>
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-server-spi-private</artifactId>
+            <scope>provided</scope>
+            <version>${keycloack.version}</version>            
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <scope>provided</scope>
+            <version>${jboss.logging.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-services</artifactId>
+            <scope>provided</scope>
+            <version>${keycloack.version}</version>            
+        </dependency>
+    </dependencies>
+  
+    <build>
+        <finalName>KeycloakWaffleAuthenticator</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+  
+  
 </project>

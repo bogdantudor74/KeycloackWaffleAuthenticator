@@ -1,0 +1,5 @@
+#
+# bogdan
+#
+
+org.keycloak.waffle.authenticator.KeycloakWaffleAuthenticatorFactory
